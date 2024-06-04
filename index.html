@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carrito de Compras</h1>
+        <img src="img/1.png">
+        <br>
+        <!-- Botón para ver el carrito -->
+        <button onclick="showCart()">Ver Carrito</button>
+        
+        <!-- Productos disponibles -->
+        <div class="products">
+            <h2>Productos Disponibles</h2>
+            <ul>
+                <li>Coca cola<button onclick="addToCart('Coca cola')">Añadir al Carrito</button></li>
+                <li>Leche<button onclick="addToCart('Leche')">Añadir al Carrito</button></li>
+                <li>Pan<button onclick="addToCart('Pan')">Añadir al Carrito</button></li>
+            </ul>
+        </div>
+        
+        <!-- Carrito -->
+        <div id="cart" class="cart" style="display: none;">
+            <h2>Carrito</h2>
+            <ul id="cart-items"></ul>
+            <button onclick="clearCart()">Limpiar Carrito</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
